@@ -33,7 +33,7 @@ export default function Contact() {
           className="mb-10 flex flex-wrap items-center justify-center gap-6"
         >
           <a
-            href="mailto:ajsottile@usc.edu"
+            href="mailto:anthonysottile8@gmail.com"
             className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-medium transition-colors hover:border-coral hover:bg-coral hover:text-white"
           >
             <Mail size={18} />

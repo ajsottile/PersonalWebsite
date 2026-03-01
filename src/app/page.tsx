@@ -7,6 +7,8 @@ import PipelineVisualizer from "@/components/showcases/pipeline/PipelineVisualiz
 import BaseballDashboard from "@/components/showcases/baseball/BaseballDashboard";
 import StarSchemaExplorer from "@/components/showcases/starschema/StarSchemaExplorer";
 import Projects from "@/components/projects/Projects";
+import ChatSection from "@/components/chat/ChatSection";
+import ChatWidget from "@/components/chat/ChatWidget";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/contact/Footer";
 
@@ -29,9 +31,11 @@ export default function Home() {
           </section>
         </div>
         <Projects />
+        <ChatSection />
         <Contact />
       </main>
       <Footer />
+      <ChatWidget />
     </>
   );
 }

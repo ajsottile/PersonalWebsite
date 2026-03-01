@@ -46,9 +46,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-6 text-5xl font-bold leading-tight tracking-tight text-white md:text-7xl"
+          className="group mb-6 cursor-default text-5xl font-bold leading-tight tracking-tight md:text-7xl"
         >
-          Anthony Sottile
+          <span className="inline-block bg-clip-text text-white transition-all duration-500 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-coral group-hover:via-rose group-hover:to-mauve group-hover:bg-[length:200%_100%] group-hover:animate-[gradient-shift_2s_ease_infinite]">
+            Anthony Sottile
+          </span>
         </motion.h1>
 
         <motion.p
