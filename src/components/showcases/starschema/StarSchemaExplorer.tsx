@@ -26,7 +26,7 @@ function buildLayout(
 
   const cx = 400;
   const cy = 300;
-  const radius = 340;
+  const radius = dimTables.length > 4 ? 420 : 340;
 
   const nodes: TableNodeType[] = [
     {
@@ -96,7 +96,7 @@ export default function StarSchemaExplorer() {
           Star Schema Explorer
         </h2>
         <p className="text-gray-500 max-w-xl mx-auto">
-          Conformed dimensional models for financial and commercial analytics
+          Conformed dimensional models for financial, commercial, manufacturing, and baseball analytics
         </p>
       </div>
 
@@ -122,7 +122,7 @@ export default function StarSchemaExplorer() {
 
       <div
         className="w-full rounded-xl border border-gray-200 bg-[#FAFAFA] shadow-sm overflow-hidden"
-        style={{ height: 500 }}
+        style={{ height: 540 }}
       >
         <ReactFlow
           key={activeSchema}

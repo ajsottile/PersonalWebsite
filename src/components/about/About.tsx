@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 import Headshot from "./Headshot";
+import PhotoStrip from "./PhotoStrip";
 import StatCard from "./StatCard";
 import { STATS, EDUCATION } from "@/data/resume";
 
@@ -42,6 +43,8 @@ export default function About() {
             </p>
           </motion.div>
         </div>
+
+        <PhotoStrip />
 
         {/* Stat Cards */}
         <div className="mb-12 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">

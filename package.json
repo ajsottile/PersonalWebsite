@@ -11,6 +11,8 @@
   "dependencies": {
     "@ai-sdk/openai": "^3.0.37",
     "@ai-sdk/react": "^3.0.107",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
     "@xyflow/react": "^12.10.1",
     "ai": "^6.0.105",
     "clsx": "^2.1.1",
@@ -22,7 +24,8 @@
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
     "recharts": "^3.7.0",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "three": "^0.183.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

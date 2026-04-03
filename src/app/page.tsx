@@ -5,6 +5,7 @@ import Skills from "@/components/skills/Skills";
 import Timeline from "@/components/experience/Timeline";
 import PipelineVisualizer from "@/components/showcases/pipeline/PipelineVisualizer";
 import BaseballDashboard from "@/components/showcases/baseball/BaseballDashboard";
+import SpinVisualization from "@/components/showcases/spinviz/SpinVisualization";
 import StarSchemaExplorer from "@/components/showcases/starschema/StarSchemaExplorer";
 import Projects from "@/components/projects/Projects";
 import ChatSection from "@/components/chat/ChatSection";
@@ -26,6 +27,7 @@ export default function Home() {
             <PipelineVisualizer />
           </section>
           <BaseballDashboard />
+          <SpinVisualization />
           <section className="bg-light-gray/50">
             <StarSchemaExplorer />
           </section>
