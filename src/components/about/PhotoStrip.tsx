@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 
 const PHOTOS = [
   "/Image1.jpg",
-  "/Image2.jpg",
   "/Image3.jpg",
-  "/Image4.jpg",
   "/Image5.jpg",
   "/Image6.jpg",
   "/Image7.jpg",
