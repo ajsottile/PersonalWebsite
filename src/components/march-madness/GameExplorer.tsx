@@ -56,7 +56,7 @@ export default function GameExplorer() {
 
   return (
     <section className="bg-light-gray/20 py-16">
-      <div className="mx-auto max-w-[1680px] px-6">
+      <div className="mx-auto max-w-[1680px] px-4 sm:px-6">
         <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
           <div>
             <motion.h2
@@ -87,7 +87,7 @@ export default function GameExplorer() {
           </div>
         </div>
 
-        <div className="mb-4 grid grid-cols-2 gap-3 md:grid-cols-5">
+        <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
           <select value={round} onChange={(e) => setRound(e.target.value)} className="rounded-lg border border-mauve/20 bg-white px-3 py-2 text-sm text-center">
             {rounds.map((r) => (
               <option key={r} value={r}>
@@ -123,14 +123,18 @@ export default function GameExplorer() {
           </div>
         </div>
 
+        <p className="mb-2 text-xs text-near-black/55 sm:hidden">
+          Swipe horizontally to view all columns.
+        </p>
+
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="overflow-hidden rounded-2xl border border-mauve/20 bg-white shadow-sm"
+          className="overflow-x-auto rounded-2xl border border-mauve/20 bg-white shadow-sm"
         >
           <div className="max-h-[560px] overflow-auto">
-            <table className="w-full table-fixed border-collapse text-sm">
+            <table className="min-w-[980px] w-full table-auto border-collapse text-sm">
               <thead className="sticky top-0 z-10 bg-gradient-to-r from-navy to-midnight text-white">
                 <tr>
                   <th className="px-2 py-2 text-center text-[11px] uppercase tracking-wide">Slot</th>

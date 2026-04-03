@@ -139,7 +139,7 @@ export default function ChampionshipOdds({
 
   return (
     <section className="bg-light-gray/20 py-16">
-      <div className="mx-auto max-w-[1680px] px-6">
+      <div className="mx-auto max-w-[1680px] px-4 sm:px-6">
         <div className="mb-6 flex items-center justify-between gap-4">
           <div>
             <motion.h2
@@ -181,14 +181,18 @@ export default function ChampionshipOdds({
           </div>
         </div>
 
+        <p className="mb-2 text-xs text-near-black/55 sm:hidden">
+          Swipe horizontally to see all columns.
+        </p>
+
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.45 }}
-          className="overflow-hidden rounded-2xl border border-mauve/20 bg-white shadow-sm"
+          className="overflow-x-auto rounded-2xl border border-mauve/20 bg-white shadow-sm"
         >
-          <div className="grid grid-cols-[56px_1.9fr_repeat(10,minmax(0,1fr))] gap-2 border-b border-light-gray bg-gradient-to-r from-navy to-midnight px-3 py-2 text-[10px] font-semibold uppercase tracking-wide text-white/90 text-center">
+          <div className="grid min-w-[1120px] grid-cols-[56px_1.9fr_repeat(10,minmax(0,1fr))] gap-2 border-b border-light-gray bg-gradient-to-r from-navy to-midnight px-3 py-2 text-[10px] font-semibold uppercase tracking-wide text-white/90 text-center">
             <MetricHeader
               label="Rank"
               description="Position after sorting teams by Championship Title % (highest to lowest)."
@@ -248,7 +252,7 @@ export default function ChampionshipOdds({
                   type="button"
                   onClick={() => onSelectTeam?.(row.team)}
                   className={cn(
-                    "grid w-full grid-cols-[56px_1.9fr_repeat(10,minmax(0,1fr))] items-center gap-2 border-b border-light-gray px-3 py-2 text-center transition",
+                    "grid min-w-[1120px] w-full grid-cols-[56px_1.9fr_repeat(10,minmax(0,1fr))] items-center gap-2 border-b border-light-gray px-3 py-2 text-center transition",
                     active
                       ? "bg-coral/10 ring-1 ring-inset ring-coral/30"
                       : "bg-white hover:bg-light-gray/40"

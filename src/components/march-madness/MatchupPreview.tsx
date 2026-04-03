@@ -65,7 +65,7 @@ export default function MatchupPreview({
         onClick={onClose}
       >
         <motion.div
-          className="relative w-[520px] max-h-[85vh] overflow-y-auto rounded-2xl border border-mauve/20 bg-white p-5 shadow-2xl"
+          className="relative w-[min(96vw,560px)] max-h-[85vh] overflow-y-auto rounded-2xl border border-mauve/20 bg-white p-4 sm:p-5 shadow-2xl"
           initial={{ scale: 0.92, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.92, opacity: 0, y: 20 }}
@@ -128,8 +128,8 @@ export default function MatchupPreview({
           </div>
 
           {/* Stats Comparison Table */}
-          <div className="rounded-lg border border-light-gray overflow-hidden">
-            <div className="grid grid-cols-[1fr_110px_1fr] gap-1 bg-gradient-to-r from-navy to-midnight px-3 py-1.5 text-[10px] font-semibold text-white/85">
+          <div className="overflow-x-auto rounded-lg border border-light-gray">
+            <div className="grid min-w-[430px] grid-cols-[1fr_110px_1fr] gap-1 bg-gradient-to-r from-navy to-midnight px-3 py-1.5 text-[10px] font-semibold text-white/85">
               <div className="text-center">{teamA}</div>
               <div className="text-center">Metric</div>
               <div className="text-center">{teamB}</div>
@@ -144,7 +144,7 @@ export default function MatchupPreview({
               return (
                 <div
                   key={stat.key}
-                  className="group grid grid-cols-[1fr_110px_1fr] gap-1 border-t border-light-gray/60 px-3 py-1.5"
+                  className="group grid min-w-[430px] grid-cols-[1fr_110px_1fr] gap-1 border-t border-light-gray/60 px-3 py-1.5"
                 >
                   <div className={cn("text-center text-[11px]", aWins ? "font-bold text-coral" : "text-near-black/70")}>
                     {stat.format(vA)}
