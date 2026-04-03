@@ -60,7 +60,7 @@ export default function Contact() {
         </motion.div>
 
         <motion.a
-          href="/resume.pdf"
+          href="/AnthonySottile_Resume.pdf"
           download
           title="Download Resume (PDF)"
           initial={{ opacity: 0 }}

@@ -76,7 +76,7 @@ export default function Hero() {
             Explore My Work
           </a>
           <a
-            href="/resume.pdf"
+            href="/AnthonySottile_Resume.pdf"
             download
             title="Download Resume (PDF)"
             className="rounded-full border-2 border-white/30 bg-white/10 px-8 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:border-coral hover:bg-coral"

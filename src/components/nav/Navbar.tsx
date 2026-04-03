@@ -59,7 +59,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="/AnthonySottile_Resume.pdf"
             download
             title="Download Resume (PDF)"
             className="rounded-full bg-coral px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-navy"
@@ -102,7 +102,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="/resume.pdf"
+                href="/AnthonySottile_Resume.pdf"
                 download
                 title="Download Resume (PDF)"
                 className="w-fit rounded-full bg-coral px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-navy"
